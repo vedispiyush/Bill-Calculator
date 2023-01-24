@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Calculator</title>
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+  <body>
+    <p class="bs"><b>BILL SPILL<b></p>
+    <div class="container">
+      <div class="left">
+        <p><b>BILL</b></p>
+        <div class="symbol">₹</div>
+        <input type="number"  placeholder="0"   id="input"  />
+        <p class="tip"><b>TIP PERCENTAGE</b></p>
+
+        <div class="button">
+          <input type="button" id="one" value="5%" />
+          <input type="button" id="one" value="10%" />
+          <input type="button" id="one" value="15%" />
+        </div>
+        <div class="button2">
+          <input type="button" id="one" value="25%" />
+          <input type="button" id="one" value="50%" />
+          <input type="button" id="one" value="75%" />
+        </div>
+        <p class="tpp"><b>TIP PER PERSON</b></p>
+        <div class="perperson">
+          <div id="pic">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFDj1W172dKgM5eIjZw0mOTyCQiUIr1PrOgd6S5eM&s"
+            />
+          </div>
+          <input type="button" id="inc" onclick="myFunction()" value="+" />
+          <input type="button" id="dec" onclick="fun()" value="-" />
+          <div id="zero">0</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="rone">
+          <div class="rone1"><b>Tip Amount</b>
+            <br>
+            <span>/person</span>
+
+          </div>
+          <div id="rone2"><b>₹ 0.00</b>
+
+          </div>
+        </div>
+        <div class="rtwo">
+          <div class="rtwo1"><b>Total</b>
+            <br>
+            <span>/person</span>
+
+          </div>
+          <div id="rtwo2"><b>₹ 0.00</b>
+          </div>
+        </div>
+        <input type="button" id="rthree" onclick="total_amount()" value="GENERATE BILL">
+        <input type="button" id="refresh" onclick="reset()" value="&#x21bb" >
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
