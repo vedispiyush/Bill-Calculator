@@ -35,10 +35,17 @@ function total_amount() {
   let sum = parseInt(bill) + parseInt((bill * ans) / 100);
   document.getElementById("rtwo2").innerHTML = sum;
 }
+
+function visible(){
+  document.getElementById("refresh").style.display="block";
+}
 function reset(){
   document.getElementById("zero").innerHTML=0;
   document.getElementById("rone2").innerHTML=0;
   document.getElementById("rtwo2").innerHTML=0;
   document.getElementById("input").value=0;
+  document.getElementById("refresh").style.display="none";
+
+
 }
 
